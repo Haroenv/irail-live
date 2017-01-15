@@ -1,0 +1,19 @@
+projectName: irail-live
+template:
+  url: https://github.com/haroenv/template-webpack
+  name: template-webpack
+generators:
+  page:
+    src: .generators/page.js
+    target: src/pages
+  element:
+    src: .generators/element.js
+    target: src/elements
+  model:
+    src: .generators/model.js
+    target: src/models
+required:
+  - _choo.yaml
+  - _gitignore
+  - _package.json
+  - _editorconfig
